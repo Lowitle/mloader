@@ -23,10 +23,10 @@ log = logging.getLogger()
 MangaList = Dict[int, Set[int]]  # Title ID: Set[Chapter ID]
 
 AUTH_PARAMS = {
-    "app_ver": "1.8.3",
-    "os": "ios",
-    "os_ver": "15.5",
-    "secret": "f40080bcb01a9a963912f46688d411a3",
+    "app_ver": "182",
+    "os": "android",
+    "os_ver": "33",
+    "secret": "d54a7d4a7035ed7cdf10bf9e3a386e11",
 }
 
 
@@ -67,7 +67,7 @@ class MangaLoader:
     @lru_cache(None)
     def _get_title_details(self, title_id: Union[str, int]) -> TitleDetailView:
         resp = self.session.get(
-            f"{self._api_url}/api/title_detailV2",
+            f"{self._api_url}/api/title_detailV3",
             params={
                 **AUTH_PARAMS,
                 "title_id": title_id,
