@@ -26,7 +26,7 @@ AUTH_PARAMS = {
     "app_ver": "182",
     "os": "android",
     "os_ver": "33",
-    "secret": "d54a7d4a7035ed7cdf10bf9e3a386e11",
+    "secret": "0617fbaa386839dc3a4fc28dff7a04fe",
 }
 
 
